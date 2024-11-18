@@ -13,9 +13,9 @@ content = """
 
 @app.get("/")
 def read_root():
-    return RedirectResponse(url="https://t.me/kstudiopaybot")
+    return HTMLResponse(content=content)
 
 
 @app.get("/verification.txt")
 def read_item():
-    return HTMLResponse(content=content)
+    return HTMLResponse(content="be19a4098d3d1fab16e7602d49296638e57f0411")
